@@ -1,11 +1,13 @@
+import ProfilePhoto from '../assets/melike.jpeg';
 const Hero = () => {
     return (
-        <section className="min-h-[80vh] flex flex-col items-center justify-center text-center px-6">
+        <section id='home' className="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 pt-24">
             {/* Profile Picture*/}
-            <div className="w-32 h-32 rounded-full bg-gradient-to-tr from-sky-400 to-emerald-400 p-1 mb-8 shadow-xl shadow-sky-500/20">
-                <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
-                    <span className="text-4xl">👩‍💻</span>
-                </div>
+            <div className="w-32 h-32 rounded-full bg-gradient-to-tr from-sky-400 to-emerald-400 p-1 mb-8 shadow-xl shadow-sky-500/20 group overflow-hidden">
+                <img 
+                src={ProfilePhoto}
+                alt="Melike Şahin Photo" 
+                className="w-full h-full rounded-full objeckt-cover group-hover:scale-110 transition-transform duration-500"/>
             </div> 
             {/* Main Heading */}
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-4">
